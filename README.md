@@ -63,7 +63,8 @@ and the simulator reported no error of its own.
    clock/reset, pins).
 3. Keep one test per file in `tb/tests/`; a test gives its stimulus in `create_stimulus()`.
 4. To move to a newer hexk-sv-lib, change `HEXK_SV_LIB_VERSION` and `HEXK_SV_LIB_COMMIT` in
-   `hexk.mk`; to a newer toolbox, the image tag in the workflow, the dev container and here.
+   `hexk.mk`; to a newer toolbox, the image tag and digest in the workflow and the dev
+   container, and the tag here.
 
 ## Known limits of Verilator 5.046
 

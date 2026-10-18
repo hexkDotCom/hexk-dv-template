@@ -1,6 +1,6 @@
 {
   "name": "hexk-dv-toolbox",
-  "image": "ghcr.io/hexkdotcom/hexk-dv-toolbox:2026.10.0",
+  "image": "ghcr.io/hexkdotcom/hexk-dv-toolbox:2026.10.0@sha256:0d137996d4b821325e98a59c7c744017f4c7e67531e7ed4793bef1353baf3a10",
   "remoteUser": "ubuntu",
   "updateRemoteUserUID": true,
   "customizations": {
