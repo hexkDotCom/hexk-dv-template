@@ -1,0 +1,13 @@
+{
+  "name": "hexk-dv-toolbox",
+  "image": "ghcr.io/hexkdotcom/hexk-dv-toolbox:2026.10.0",
+  "remoteUser": "ubuntu",
+  "updateRemoteUserUID": true,
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "CHIPSAlliance.verible"
+      ]
+    }
+  }
+}

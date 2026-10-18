@@ -1,0 +1,9 @@
+# Rule configuration for verible-verilog-lint, on top of the default rule set.
+# Style guide rule FMT-3: lines up to 120 columns.
+line-length=length:120
+# Style guide rule NAM-2: parameters and localparams are UPPER_SNAKE_CASE.
+parameter-name-style=parameter_style:ALL_CAPS;localparam_style:ALL_CAPS
+# Style guide rules MSG-1 and MSG-4: all four UVM report macros are used, `uvm_warning included.
+-forbidden-macro
+# Style guide rule LNG-13: constraints are named <what>_cstr.
+constraint-name-style=pattern:([a-z0-9]+_)+cstr

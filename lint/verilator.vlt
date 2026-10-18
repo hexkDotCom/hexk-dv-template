@@ -1,0 +1,17 @@
+// SPDX-License-Identifier: 0BSD
+//
+// Lint waivers of this project for Verilator. Every waiver names the rule and the reason.
+// UVM and hexk-sv-lib are left out of the lint by the Makefile, by their paths.
+
+`verilator_config
+
+// COVERIGN, DECLFILENAME, UNUSEDPARAM: Verilator 5.046 does not collect functional coverage; it
+// ignores the coverpoints and bins, turns the covergroup into a class of its own name, and then
+// reports the file name and the unused bound of the bins. Questa and VCS collect it.
+lint_off -rule COVERIGN -file "*/square_coverage.sv"
+lint_off -rule DECLFILENAME -file "*/square_coverage.sv"
+lint_off -rule UNUSEDPARAM -file "*/square_coverage.sv"
+
+// UNDRIVEN: Verilator 5.046 reports the inputs of a clocking block as not driven, although the
+// signals behind them are driven by the DUT.
+lint_off -rule UNDRIVEN -file "*/square_out_if.sv"
